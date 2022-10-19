@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Ink&family=Bungee+Spice&display=swap');
+
+
+*
+{
+    align-items: center;
+      text-align: center;
+        font-family: 'Blaka Ink', cursive;
+    font-family: 'Bungee Spice', cursive;
+
+ }
+
+ #result{
+    background-color: #47b5ff;
+    border-radius: 500px ;
+    box-shadow: 500px;
+    box-sizing: border-box;
+ }
+ .content{
+    background-color: #645caa;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+ }
+
+ #submit{
+background-color: black;
+ }
+

@@ -5,19 +5,16 @@
 // Date: 2022-10-19
 // Github: https://github.com/megyerimark/
 //
-var szoldal = document.querySelector('#oldal');
-var alfa = document.querySelector('#alfa');
-var szamitGomb = document.querySelector('#submit');
-var eredmeny = document.querySelector("#result");
-function szamitsugar(szoldal) {
-    return 1 / 2 * szoldal * Math.sin(alfa);
+var oldalElem = document.querySelector('#oldal');
+var alfaElem = document.querySelector("#alfa");
+var gomb = document.querySelector("#submit");
+var result = document.querySelector("#result");
+function szamitSugar(oldal, alfa) {
+    return 1 / 2 * oldal * Math.sin(alfa);
 }
-szamitGomb.addEventListener("click", function () {
-    var oldal = Number(szoldal.value);
-    var alda = Number(alfa.value);
-    var sugar = szamitsugar(szoldal);
-    eredmeny.innerHTML = String(szoldal);
+gomb.addEventListener('click', function () {
+    var oldal = Number(oldalElem.value);
+    var alfa = Number(alfaElem.value);
+    var sugar = szamitSugar(oldal, alfa);
+    result.innerHTML = String(sugar);
 });
-// szamol.addEventListener('click , ()=>{
-//     let oldal= Number(szoldal.value);
-// });
